@@ -1,11 +1,11 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 
 def minoperations(n):
     """
     This function calculates the fewest number 
     of operations needed to result in exactly n H characters in the file.
     """
-    
+
     if (n <= 0):
         return 0
 
