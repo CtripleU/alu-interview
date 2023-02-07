@@ -18,11 +18,11 @@ def minOperations(n):
 
     # Divide by 2 if n is even
     if (n % 2 == 0):
-        ops += minoperations(n // 2)
+        ops += minOperations(n // 2)
         ops += 1
 
     else:
-        ops += minoperations(n - 1)
+        ops += minOperations(n - 1)
         ops += 1
 
     return ops
