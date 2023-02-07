@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+"""
+Module doc.
+"""
+
 def minoperations(n):
     """
     This function calculates the fewest number 
