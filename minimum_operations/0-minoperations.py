@@ -4,16 +4,17 @@
 Module doc.
 """
 
+
 def minOperations(n):
     """
-    This function calculates the fewest number 
+    This function calculates the fewest number
     of operations needed to result in exactly n H characters in the file.
     """
 
     # Assign the variables
-    operations = 0   #number of operations performed
-    copied = 0       #number of H characters copied
-    pasted = 1       #number of H characters in file
+    operations = 0   # number of operations performed
+    copied = 0       # number of H characters copied
+    pasted = 1       # number of H characters in file
 
     while pasted < n:
         if copied == 0:
