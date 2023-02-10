@@ -11,9 +11,9 @@ def minOperations(n):
     """
 
     # Assign the variables
-    operations = 0    #number of operations performed
-    copied = 0        #number of H characters copied
-    pasted = 1        #number of H characters in file
+    operations = 0   #number of operations performed
+    copied = 0       #number of H characters copied
+    pasted = 1       #number of H characters in file
 
     while pasted < n:
         if copied == 0:
