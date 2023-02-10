@@ -10,19 +10,28 @@ def minOperations(n):
     of operations needed to result in exactly n H characters in the file.
     """
 
-    if (n <= 0):
-        return 0
+    # Assign the variables
+    operations = 0    #number of operations performed
+    copied = 0        #number of H characters copied
+    pasted = 1        #number of H characters in file
 
-    # Init result
-    ops = 0
+    while pasted < n:
+        if copied == 0:
+            copied = pasted
+            operations += 1
+        elif pasted == 1:
+            pasted += copied
+            operations += 1
+        else:
+            remaining = n - pasted
+            if remaining < copied:
+                return 0
+            if remaining % pasted != 0:
+                pasted += copied
+                operations += 1
+            else:
+                copied = pasted
+                pasted += copied
+                operations += 2
 
-    # Divide by 2 if n is even
-    if (n % 2 == 0):
-        ops += minOperations(n // 2)
-        ops += 1
-
-    else:
-        ops += minOperations(n - 1)
-        ops += 1
-
-    return ops
+    return operations if pasted == n else 0
