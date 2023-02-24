@@ -2,9 +2,10 @@
 
 """doc"""
 
+
 def rain(walls):
     """
-    This function calculate how many square units of 
+    This function calculate how many square units of
     water will be retained after it rains.
     """
 
