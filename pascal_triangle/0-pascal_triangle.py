@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """A module for generating Pascal's triangle."""
 def pascal_triangle(n):
-    # Check special case
+    """Generates Pascal's triangle. """
     if n <= 0:
         return []
     
