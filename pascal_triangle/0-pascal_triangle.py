@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def pascal_triangle(n):
     # Check special case
     if n <= 0:
